@@ -22,13 +22,24 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juV-in-n6t">
-                    <rect key="frame" x="73" y="317" width="175" height="30"/>
+                    <rect key="frame" x="73" y="287" width="175" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Add and remove the view">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
+                        <action selector="addRemoveSubview:" destination="-1" eventType="touchUpInside" id="FNZ-QE-oze"/>
                         <action selector="theButtonWasPressed:" destination="-1" eventType="touchUpInside" id="Pvr-EU-6aU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upu-bD-1dc">
+                    <rect key="frame" x="99" y="325" width="123" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Toggle red square">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleRedSquare:" destination="-1" eventType="touchUpInside" id="S7q-ib-yWa"/>
                     </connections>
                 </button>
             </subviews>

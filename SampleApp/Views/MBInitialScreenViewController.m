@@ -4,7 +4,9 @@
 
 @end
 
-@implementation MBInitialScreenViewController
+@implementation MBInitialScreenViewController {
+    UIView* redSquare;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,7 +25,20 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)theButtonWasPressed:(id)sender {
+- (IBAction)toggleRedSquare:(id)sender {
+    if (!self->redSquare) {
+        self->redSquare = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+        self->redSquare.backgroundColor = [UIColor redColor];
+    }
+    
+    if (![self->redSquare isDescendantOfView:self.view]) {
+        [self.view addSubview:self->redSquare];
+    } else {
+        [self->redSquare removeFromSuperview];
+    }
+}
+
+- (IBAction)addRemoveSubview:(id)sender {
     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"hello" message:@"why did you press that?" delegate:nil cancelButtonTitle:@"oh no!" otherButtonTitles:nil];
     [alertView show];
     [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerDone) userInfo:nil repeats:YES];
