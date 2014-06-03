@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,6 +26,15 @@
 - (IBAction)theButtonWasPressed:(id)sender {
     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"hello" message:@"why did you press that?" delegate:nil cancelButtonTitle:@"oh no!" otherButtonTitles:nil];
     [alertView show];
+    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerDone) userInfo:nil repeats:YES];
+}
+
+- (void)timerDone {
+    if (self.view.superview) {
+        [self.view removeFromSuperview];
+    } else {
+        [[[UIApplication sharedApplication] keyWindow] addSubview:self.view];
+    }
 }
 
 /*
