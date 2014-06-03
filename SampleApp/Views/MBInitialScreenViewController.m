@@ -1,4 +1,5 @@
 #import "MBInitialScreenViewController.h"
+#import "MBCodeOnlyViewController.h"
 
 @interface MBInitialScreenViewController ()
 
@@ -50,6 +51,11 @@
     } else {
         [[[UIApplication sharedApplication] keyWindow] addSubview:self.view];
     }
+}
+
+- (IBAction)navToCodeOnly:(id)sender {
+    MBCodeOnlyViewController* vc = [[MBCodeOnlyViewController alloc] initCodeOnly];
+    [self.navigationController pushViewController:vc animated:NO];
 }
 
 /*

@@ -11,6 +11,9 @@
     MBInitialScreenViewController* vc = [[MBInitialScreenViewController alloc] initWithNibName:@"InitialScreen" bundle:[NSBundle mainBundle]];
     self.window.rootViewController = vc;
     
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

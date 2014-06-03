@@ -21,6 +21,7 @@
 		4D28C913193D291300E6DA01 /* SampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D28C912193D291300E6DA01 /* SampleAppTests.m */; };
 		4D28C922193D473E00E6DA01 /* InitialScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D28C921193D473E00E6DA01 /* InitialScreen.xib */; };
 		4D28C925193D476100E6DA01 /* MBInitialScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D28C924193D476100E6DA01 /* MBInitialScreenViewController.m */; };
+		4DFF4C11193D5045002DB336 /* MBCodeOnlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF4C10193D5045002DB336 /* MBCodeOnlyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		4D28C921193D473E00E6DA01 /* InitialScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InitialScreen.xib; path = Views/InitialScreen.xib; sourceTree = "<group>"; };
 		4D28C923193D476100E6DA01 /* MBInitialScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBInitialScreenViewController.h; path = Views/MBInitialScreenViewController.h; sourceTree = "<group>"; };
 		4D28C924193D476100E6DA01 /* MBInitialScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBInitialScreenViewController.m; path = Views/MBInitialScreenViewController.m; sourceTree = "<group>"; };
+		4DFF4C0F193D5045002DB336 /* MBCodeOnlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBCodeOnlyViewController.h; path = Views/MBCodeOnlyViewController.h; sourceTree = "<group>"; };
+		4DFF4C10193D5045002DB336 /* MBCodeOnlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBCodeOnlyViewController.m; path = Views/MBCodeOnlyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 				4D28C921193D473E00E6DA01 /* InitialScreen.xib */,
 				4D28C923193D476100E6DA01 /* MBInitialScreenViewController.h */,
 				4D28C924193D476100E6DA01 /* MBInitialScreenViewController.m */,
+				4DFF4C0F193D5045002DB336 /* MBCodeOnlyViewController.h */,
+				4DFF4C10193D5045002DB336 /* MBCodeOnlyViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFF4C11193D5045002DB336 /* MBCodeOnlyViewController.m in Sources */,
 				4D28C8FA193D291300E6DA01 /* main.m in Sources */,
 				4D28C925193D476100E6DA01 /* MBInitialScreenViewController.m in Sources */,
 				4D28C8FE193D291300E6DA01 /* MBAppDelegate.m in Sources */,
