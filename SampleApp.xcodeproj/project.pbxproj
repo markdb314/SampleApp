@@ -19,6 +19,8 @@
 		4D28C909193D291300E6DA01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D28C8F1193D291300E6DA01 /* UIKit.framework */; };
 		4D28C911193D291300E6DA01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D28C90F193D291300E6DA01 /* InfoPlist.strings */; };
 		4D28C913193D291300E6DA01 /* SampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D28C912193D291300E6DA01 /* SampleAppTests.m */; };
+		4D28C922193D473E00E6DA01 /* InitialScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D28C921193D473E00E6DA01 /* InitialScreen.xib */; };
+		4D28C925193D476100E6DA01 /* MBInitialScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D28C924193D476100E6DA01 /* MBInitialScreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		4D28C90E193D291300E6DA01 /* SampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		4D28C910193D291300E6DA01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4D28C912193D291300E6DA01 /* SampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppTests.m; sourceTree = "<group>"; };
+		4D28C921193D473E00E6DA01 /* InitialScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InitialScreen.xib; path = Views/InitialScreen.xib; sourceTree = "<group>"; };
+		4D28C923193D476100E6DA01 /* MBInitialScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBInitialScreenViewController.h; path = Views/MBInitialScreenViewController.h; sourceTree = "<group>"; };
+		4D28C924193D476100E6DA01 /* MBInitialScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBInitialScreenViewController.m; path = Views/MBInitialScreenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 		4D28C8F3193D291300E6DA01 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				4D28C91C193D46D200E6DA01 /* Views */,
 				4D28C8FC193D291300E6DA01 /* MBAppDelegate.h */,
 				4D28C8FD193D291300E6DA01 /* MBAppDelegate.m */,
 				4D28C8FF193D291300E6DA01 /* Images.xcassets */,
@@ -142,6 +148,16 @@
 				4D28C90F193D291300E6DA01 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D28C91C193D46D200E6DA01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D28C921193D473E00E6DA01 /* InitialScreen.xib */,
+				4D28C923193D476100E6DA01 /* MBInitialScreenViewController.h */,
+				4D28C924193D476100E6DA01 /* MBInitialScreenViewController.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +237,7 @@
 			files = (
 				4D28C8F8193D291300E6DA01 /* InfoPlist.strings in Resources */,
 				4D28C900193D291300E6DA01 /* Images.xcassets in Resources */,
+				4D28C922193D473E00E6DA01 /* InitialScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D28C8FA193D291300E6DA01 /* main.m in Sources */,
+				4D28C925193D476100E6DA01 /* MBInitialScreenViewController.m in Sources */,
 				4D28C8FE193D291300E6DA01 /* MBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +455,7 @@
 				4D28C918193D291300E6DA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D28C919193D291300E6DA01 /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +464,7 @@
 				4D28C91B193D291300E6DA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
