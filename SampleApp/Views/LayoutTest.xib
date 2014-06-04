@@ -31,12 +31,9 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57m-L4-bly" userLabel="BlueBox">
-                    <rect key="frame" x="27" y="218" width="160" height="160"/>
+                    <rect key="frame" x="27" y="218" width="160" height="330"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="160" id="T2y-3Z-6YP"/>
-                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -44,6 +41,7 @@
                 <constraint firstItem="57m-L4-bly" firstAttribute="top" secondItem="ipP-UP-544" secondAttribute="bottom" constant="54" id="BtF-OX-3il"/>
                 <constraint firstAttribute="trailing" secondItem="57m-L4-bly" secondAttribute="trailing" constant="133" id="Dtn-IZ-dK0"/>
                 <constraint firstItem="ipP-UP-544" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="44" id="UzL-AS-HMH"/>
+                <constraint firstAttribute="bottom" secondItem="57m-L4-bly" secondAttribute="bottom" constant="20" id="YPh-Cs-PIh"/>
                 <constraint firstItem="FWo-gf-g7q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="bfu-A8-T6Q"/>
                 <constraint firstItem="ipP-UP-544" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="90" id="ejH-3o-0h1"/>
                 <constraint firstItem="57m-L4-bly" firstAttribute="top" secondItem="FWo-gf-g7q" secondAttribute="bottom" constant="16" id="j1Q-Zq-lbT"/>
