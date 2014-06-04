@@ -1,5 +1,6 @@
 #import "MBInitialScreenViewController.h"
 #import "MBCodeOnlyViewController.h"
+#import "MBLayoutTestViewController.h"
 
 @interface MBInitialScreenViewController ()
 
@@ -55,6 +56,11 @@
 
 - (IBAction)navToCodeOnly:(id)sender {
     MBCodeOnlyViewController* vc = [[MBCodeOnlyViewController alloc] initCodeOnly];
+    [self.navigationController pushViewController:vc animated:NO];
+}
+
+- (IBAction)navToLayoutTest:(id)sender {
+    MBLayoutTestViewController* vc = [[MBLayoutTestViewController alloc] init];
     [self.navigationController pushViewController:vc animated:NO];
 }
 
