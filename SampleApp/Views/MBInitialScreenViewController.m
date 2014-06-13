@@ -1,6 +1,7 @@
 #import "MBInitialScreenViewController.h"
 #import "MBCodeOnlyViewController.h"
 #import "MBLayoutTestViewController.h"
+#import "MBDrawingTestViewController.h"
 
 @interface MBInitialScreenViewController ()
 
@@ -64,15 +65,9 @@
     [self.navigationController pushViewController:vc animated:NO];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)navToDrawingTest:(id)sender {
+    MBDrawingTestViewController* vc = [[MBDrawingTestViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:NO];
 }
-*/
 
 @end
