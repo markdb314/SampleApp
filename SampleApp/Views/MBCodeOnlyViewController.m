@@ -66,10 +66,10 @@
 //    [self->_outerView setBounds:bounds];
 
     // adjust the origin of the bounds of the outer view
-    CGRect bounds = _outerView.bounds;
-    bounds.origin.x += 10;
-    bounds.origin.y += 10;
-    [self->_outerView setBounds:bounds];
+//    CGRect bounds = _outerView.bounds;
+//    bounds.origin.x += 10;
+//    bounds.origin.y += 10;
+//    [self->_outerView setBounds:bounds];
 
     // adjust the origin of the bounds to something negative
 //    CGRect bounds = _outerView.bounds;
@@ -83,6 +83,9 @@
 //    center.x += 10;
 //    center.y += 10;
 //    [_innerView setCenter:center];
+
+    // stretch the width of the outer view
+    _outerView.transform = CGAffineTransformMakeScale(1.8, 1);
     
     [self displayViewInfo];
 }
