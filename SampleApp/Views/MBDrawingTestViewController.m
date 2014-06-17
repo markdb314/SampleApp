@@ -11,7 +11,6 @@
 - (id)init {
     self = [super initWithNibName:@"DrawingTest" bundle:nil];
     if (self) {
-        // custom initialization
     }
     return self;
 }
@@ -22,6 +21,17 @@
 }
 
 - (void)viewDidLoad {
+    [self framesTest];
+//    [self loadBasicLayerAndAnimationTest];
+}
+
+- (void)framesTest {
+    UIView* orangeView = [[UIView alloc] initWithFrame:CGRectMake(50, 150, 50, 50)];
+    orangeView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:orangeView];
+}
+
+- (void)loadBasicLayerAndAnimationTest {
     CALayer* lay1 = [CALayer new];
     lay1.frame = CGRectMake(113, 111, 132, 194);
     lay1.backgroundColor = [[UIColor purpleColor] CGColor];
