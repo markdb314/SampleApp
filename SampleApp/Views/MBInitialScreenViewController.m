@@ -2,6 +2,7 @@
 #import "MBCodeOnlyViewController.h"
 #import "MBLayoutTestViewController.h"
 #import "MBDrawingTestViewController.h"
+#import "MBRotationTestViewController.h"
 
 @interface MBInitialScreenViewController ()
 
@@ -67,6 +68,11 @@
 
 - (IBAction)navToDrawingTest:(id)sender {
     MBDrawingTestViewController* vc = [[MBDrawingTestViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:NO];
+}
+
+- (IBAction)navToRotationTest:(id)sender {
+    MBRotationTestViewController* vc = [[MBRotationTestViewController alloc] init];
     [self.navigationController pushViewController:vc animated:NO];
 }
 

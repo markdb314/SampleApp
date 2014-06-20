@@ -25,6 +25,8 @@
 		4D595337193EE1EF00F9CDA9 /* MBLayoutTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D595336193EE1EF00F9CDA9 /* MBLayoutTestViewController.m */; };
 		4D9712F81947802D00560CB5 /* DrawingTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9712F71947802D00560CB5 /* DrawingTest.xib */; };
 		4D9712FB1947804D00560CB5 /* MBDrawingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9712FA1947804D00560CB5 /* MBDrawingTestViewController.m */; };
+		4D97130319525F9000560CB5 /* RotationTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D97130219525F9000560CB5 /* RotationTest.xib */; };
+		4D97130619525FCD00560CB5 /* MBRotationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D97130519525FCD00560CB5 /* MBRotationTestViewController.m */; };
 		4DFF4C11193D5045002DB336 /* MBCodeOnlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF4C10193D5045002DB336 /* MBCodeOnlyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,9 @@
 		4D9712F71947802D00560CB5 /* DrawingTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingTest.xib; sourceTree = "<group>"; };
 		4D9712F91947804D00560CB5 /* MBDrawingTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBDrawingTestViewController.h; path = Views/MBDrawingTestViewController.h; sourceTree = "<group>"; };
 		4D9712FA1947804D00560CB5 /* MBDrawingTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBDrawingTestViewController.m; path = Views/MBDrawingTestViewController.m; sourceTree = "<group>"; };
+		4D97130219525F9000560CB5 /* RotationTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RotationTest.xib; path = Views/RotationTest.xib; sourceTree = "<group>"; };
+		4D97130419525FCD00560CB5 /* MBRotationTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBRotationTestViewController.h; path = Views/MBRotationTestViewController.h; sourceTree = "<group>"; };
+		4D97130519525FCD00560CB5 /* MBRotationTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRotationTestViewController.m; path = Views/MBRotationTestViewController.m; sourceTree = "<group>"; };
 		4DFF4C0F193D5045002DB336 /* MBCodeOnlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBCodeOnlyViewController.h; path = Views/MBCodeOnlyViewController.h; sourceTree = "<group>"; };
 		4DFF4C10193D5045002DB336 /* MBCodeOnlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBCodeOnlyViewController.m; path = Views/MBCodeOnlyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +182,9 @@
 				4D9712F71947802D00560CB5 /* DrawingTest.xib */,
 				4D9712F91947804D00560CB5 /* MBDrawingTestViewController.h */,
 				4D9712FA1947804D00560CB5 /* MBDrawingTestViewController.m */,
+				4D97130219525F9000560CB5 /* RotationTest.xib */,
+				4D97130419525FCD00560CB5 /* MBRotationTestViewController.h */,
+				4D97130519525FCD00560CB5 /* MBRotationTestViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 				4D28C8F8193D291300E6DA01 /* InfoPlist.strings in Resources */,
 				4D595334193ED3AB00F9CDA9 /* LayoutTest.xib in Resources */,
 				4D28C900193D291300E6DA01 /* Images.xcassets in Resources */,
+				4D97130319525F9000560CB5 /* RotationTest.xib in Resources */,
 				4D9712F81947802D00560CB5 /* DrawingTest.xib in Resources */,
 				4D28C922193D473E00E6DA01 /* InitialScreen.xib in Resources */,
 			);
@@ -280,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DFF4C11193D5045002DB336 /* MBCodeOnlyViewController.m in Sources */,
+				4D97130619525FCD00560CB5 /* MBRotationTestViewController.m in Sources */,
 				4D28C8FA193D291300E6DA01 /* main.m in Sources */,
 				4D28C925193D476100E6DA01 /* MBInitialScreenViewController.m in Sources */,
 				4D595337193EE1EF00F9CDA9 /* MBLayoutTestViewController.m in Sources */,
