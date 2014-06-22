@@ -25,6 +25,11 @@
 //    [self loadBasicLayerAndAnimationTest];
 }
 
+- (IBAction)buttonPressed:(id)sender {
+    NSLog(@"button was pressed");
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)framesTest {
     UIView* orangeView = [[UIView alloc] initWithFrame:CGRectMake(50, 150, 50, 50)];
     orangeView.backgroundColor = [UIColor orangeColor];

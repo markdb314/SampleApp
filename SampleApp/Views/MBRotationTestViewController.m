@@ -1,4 +1,5 @@
 #import "MBRotationTestViewController.h"
+#import "MBDrawingTestViewController.h"
 
 @interface MBRotationTestViewController ()
 
@@ -38,18 +39,25 @@
     return self->_blackRect;
 }
 
-- (IBAction)buttonPressed:(id)sender {
+- (IBAction)animateButtonPressed:(id)sender {
     [UIView animateWithDuration:2.0 animations:^{
         // this was a test to see if i could add a view and change it's properties, and have those
         // property changes be animated
         self->_redSquare = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
         self->_redSquare.backgroundColor = [UIColor redColor];
         [self.view addSubview:self->_redSquare];
-        
+
         CGPoint p = self->_redSquare.center;
         p.x = 150;
         self->_redSquare.center = p;
     }];
+}
+
+- (IBAction)presentViewButtonPressed:(id)sender {
+    MBDrawingTestViewController* vc = [MBDrawingTestViewController new];
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    //vc.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)io duration:(NSTimeInterval)duration {
