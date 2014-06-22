@@ -12,6 +12,7 @@
 - (id)init {
     self = [super initWithNibName:@"RotationTest" bundle:nil];
     if (self) {
+        self.title = @"Rotation Test";
     }
     return self;
 }

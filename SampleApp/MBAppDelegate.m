@@ -1,18 +1,19 @@
 #import "MBAppDelegate.h"
 #import "Views/MBInitialScreenViewController.h"
+#import "Views/MBRotationTestViewController.h"
 
 @implementation MBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    MBInitialScreenViewController* vc = [[MBInitialScreenViewController alloc] initWithNibName:@"InitialScreen" bundle:[NSBundle mainBundle]];
-    self.window.rootViewController = vc;
-    
-    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = nav;
+    UITabBarController* tabBarController = [UITabBarController new];
+    MBInitialScreenViewController* initialScreenVC = [[MBInitialScreenViewController alloc] initWithNibName:@"InitialScreen" bundle:[NSBundle mainBundle]];
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:initialScreenVC];
+    MBRotationTestViewController* rotationTestVC = [MBRotationTestViewController new];
+    tabBarController.viewControllers = @[nav, rotationTestVC];
+    self.window.rootViewController = tabBarController;
     
     [self.window makeKeyAndVisible];
     return YES;
