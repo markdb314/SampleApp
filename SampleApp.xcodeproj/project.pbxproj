@@ -23,6 +23,8 @@
 		4D28C925193D476100E6DA01 /* MBInitialScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D28C924193D476100E6DA01 /* MBInitialScreenViewController.m */; };
 		4D595334193ED3AB00F9CDA9 /* LayoutTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D595333193ED3AB00F9CDA9 /* LayoutTest.xib */; };
 		4D595337193EE1EF00F9CDA9 /* MBLayoutTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D595336193EE1EF00F9CDA9 /* MBLayoutTestViewController.m */; };
+		4D5AD067195D2B3A00117806 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5AD066195D2B3A00117806 /* TestStoryboard.storyboard */; };
+		4D5AD0AB195D2F2F00117806 /* MBStoryboardFirstSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5AD0AA195D2F2F00117806 /* MBStoryboardFirstSceneViewController.m */; };
 		4D9712F81947802D00560CB5 /* DrawingTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9712F71947802D00560CB5 /* DrawingTest.xib */; };
 		4D9712FB1947804D00560CB5 /* MBDrawingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9712FA1947804D00560CB5 /* MBDrawingTestViewController.m */; };
 		4D97130319525F9000560CB5 /* RotationTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D97130219525F9000560CB5 /* RotationTest.xib */; };
@@ -63,6 +65,9 @@
 		4D595333193ED3AB00F9CDA9 /* LayoutTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LayoutTest.xib; path = Views/LayoutTest.xib; sourceTree = "<group>"; };
 		4D595335193EE1EF00F9CDA9 /* MBLayoutTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBLayoutTestViewController.h; path = Views/MBLayoutTestViewController.h; sourceTree = "<group>"; };
 		4D595336193EE1EF00F9CDA9 /* MBLayoutTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBLayoutTestViewController.m; path = Views/MBLayoutTestViewController.m; sourceTree = "<group>"; };
+		4D5AD066195D2B3A00117806 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestStoryboard.storyboard; path = Views/TestStoryboard.storyboard; sourceTree = "<group>"; };
+		4D5AD0A9195D2F2F00117806 /* MBStoryboardFirstSceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBStoryboardFirstSceneViewController.h; path = Views/MBStoryboardFirstSceneViewController.h; sourceTree = "<group>"; };
+		4D5AD0AA195D2F2F00117806 /* MBStoryboardFirstSceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBStoryboardFirstSceneViewController.m; path = Views/MBStoryboardFirstSceneViewController.m; sourceTree = "<group>"; };
 		4D9712F71947802D00560CB5 /* DrawingTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingTest.xib; sourceTree = "<group>"; };
 		4D9712F91947804D00560CB5 /* MBDrawingTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBDrawingTestViewController.h; path = Views/MBDrawingTestViewController.h; sourceTree = "<group>"; };
 		4D9712FA1947804D00560CB5 /* MBDrawingTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBDrawingTestViewController.m; path = Views/MBDrawingTestViewController.m; sourceTree = "<group>"; };
@@ -185,6 +190,9 @@
 				4D97130219525F9000560CB5 /* RotationTest.xib */,
 				4D97130419525FCD00560CB5 /* MBRotationTestViewController.h */,
 				4D97130519525FCD00560CB5 /* MBRotationTestViewController.m */,
+				4D5AD066195D2B3A00117806 /* TestStoryboard.storyboard */,
+				4D5AD0A9195D2F2F00117806 /* MBStoryboardFirstSceneViewController.h */,
+				4D5AD0AA195D2F2F00117806 /* MBStoryboardFirstSceneViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 				4D595334193ED3AB00F9CDA9 /* LayoutTest.xib in Resources */,
 				4D28C900193D291300E6DA01 /* Images.xcassets in Resources */,
 				4D97130319525F9000560CB5 /* RotationTest.xib in Resources */,
+				4D5AD067195D2B3A00117806 /* TestStoryboard.storyboard in Resources */,
 				4D9712F81947802D00560CB5 /* DrawingTest.xib in Resources */,
 				4D28C922193D473E00E6DA01 /* InitialScreen.xib in Resources */,
 			);
@@ -294,6 +303,7 @@
 				4D28C925193D476100E6DA01 /* MBInitialScreenViewController.m in Sources */,
 				4D595337193EE1EF00F9CDA9 /* MBLayoutTestViewController.m in Sources */,
 				4D9712FB1947804D00560CB5 /* MBDrawingTestViewController.m in Sources */,
+				4D5AD0AB195D2F2F00117806 /* MBStoryboardFirstSceneViewController.m in Sources */,
 				4D28C8FE193D291300E6DA01 /* MBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

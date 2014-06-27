@@ -76,4 +76,10 @@
     [self.navigationController pushViewController:vc animated:NO];
 }
 
+- (IBAction)navToStoryboard:(id)sender {
+    UIStoryboard* testStoryboard = [UIStoryboard storyboardWithName:@"TestStoryboard" bundle:nil];
+    UIViewController* vc = [testStoryboard instantiateInitialViewController];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 @end
